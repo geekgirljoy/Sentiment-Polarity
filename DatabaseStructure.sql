@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Mar 07, 2019 at 01:14 AM
+-- Generation Time: Mar 07, 2019 at 07:32 PM
 -- Server version: 10.1.37-MariaDB
 -- PHP Version: 7.3.0
 
@@ -13,7 +13,7 @@ START TRANSACTION;
 SET time_zone = "+00:00";
 
 --
--- Database: `sentimentanalysis`
+-- Database: `sentimentpolarity`
 --
 
 -- --------------------------------------------------------
@@ -23,7 +23,7 @@ SET time_zone = "+00:00";
 --
 
 CREATE TABLE `dictionary` (
-  `Hash` varchar(32) COLLATE latin1_general_ci NOT NULL,
+  `Hash` varchar(52) COLLATE latin1_general_ci NOT NULL,
   `Word` varchar(254) COLLATE latin1_general_ci NOT NULL,
   `Count` int(11) NOT NULL,
   `AmazonPositive` int(11) NOT NULL,
@@ -33,4 +33,14 @@ CREATE TABLE `dictionary` (
   `YelpPositive` int(11) NOT NULL,
   `YelpNegative` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1 COLLATE=latin1_general_ci;
+
+--
+-- Indexes for dumped tables
+--
+
+--
+-- Indexes for table `dictionary`
+--
+ALTER TABLE `dictionary`
+  ADD PRIMARY KEY (`Hash`);
 COMMIT;
