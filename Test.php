@@ -52,7 +52,7 @@ function EvaluatePolarity(&$score, &$words, $unknown_words = NULL){
   $output .= 'Number of Words: ' . count($words) . PHP_EOL;
   
   
-  // If unknown_words isnt null and is an array then - redundent I guess...
+  // If unknown_words isnt null and is an array then - redundant I guess...
   // but tell me that doesn't just taste grok!
   if($unknown_words != NULL && is_array($unknown_words)){
 	  $output .= 'Number of Unknown Words: ' . count($unknown_words) . PHP_EOL;
