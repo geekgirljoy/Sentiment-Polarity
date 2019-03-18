@@ -105,7 +105,7 @@ if ($conn->connect_error) {
 echo str_repeat(PHP_EOL, 100); // clear terminal screen by writing 100 line ends.
 
 // Welcome blurb
-echo wordwrap("Welcome to the Sentiment Polarity Prototype.\n\nYou can say 'quit' or 'exit' to exit the program.\n\nSay something to analyse how positive or negative it is.\n\n", 75, PHP_EOL);
+echo wordwrap("Welcome to the Sentiment Polarity Prototype.\n\nYou can say 'quit' or 'exit' to exit the program.\n\nSay something to analyze how positive or negative it is.\n\n", 75, PHP_EOL);
 while(true){
   $sentence = readline("Say Something: ");
   readline_add_history($sentence); // allows you to press the up arrow and recover previously typed strings
