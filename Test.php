@@ -119,7 +119,7 @@ while(true){
   if(in_array($sentence,$end_program_words)){
     die('Goodbye!' . PHP_EOL); // end program
   }
-  elseif($sentence == 'score file') { // sentence contains the phrase score file
+  elseif($sentence == 'score file') { // sentence IS the phrase score file
 	  $filepath = readline("File Name: ");
 
 	  if(is_file(getcwd() . "\\$filepath")){		  
