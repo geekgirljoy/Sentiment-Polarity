@@ -19,7 +19,9 @@ A PHP &amp; MySQL based Sentiment Polarity Analyzer
 
 **Average Word Score:** -9.25
 
-This sentence seems more Negative
+```diff
+- This sentence seems more Negative
+```
 
 
 ___
@@ -33,5 +35,7 @@ ___
 
 **Average Word Score:** 21.5
 
-This sentence seems more Positive
+```diff
++ This sentence seems more Positive
+```
 
